@@ -6,3 +6,25 @@
     @include title;
     font-size: 18px;
 }
+.footer__logo {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer__logo {
+        display: block;
+    }
+    .footer__dev {
+        padding: 0;
+        padding-right: 50px;
+    }
+}
+
+@media (min-width: 1150px) {
+    
+}

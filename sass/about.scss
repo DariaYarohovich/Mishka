@@ -1,11 +1,60 @@
 .about-us {
     @include title;
-    margin-top: 30px;
-    margin-bottom: 35px;
+    padding-top: 45px;
+    margin-bottom: 60px;
+    position: relative;
+}
+.about-us::before {
+    position: absolute;
+    top: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: 63%;
+    margin-right: -30px;
+    background-position: 55px 0px;
+    margin-left: -30px;
 }
 .about-us__block {
     font-size: 16px;
 }
 .about-us__item {
     padding-top: 90px;
+}
+
+@media (min-width: 736px) {
+    .about-us {
+        margin-bottom: 80px;
+    }
+    .about-us::before {
+        height: 15px;
+        background-size: 98%;
+        margin-right: -50px;
+        margin-left: -50px;
+    }
+    .about-us__block {
+        display: flex;
+    }
+    
+}
+
+@media (min-width: 1150px) {
+    .about-us {
+        margin-top: 94px;
+        margin-bottom: 90px;
+        padding-right: 225px;
+        padding-left: 225px;
+    }
+    .about-us::before {
+        height: 21px;
+        background-size: 87%;
+        margin-right: -225px;
+        margin-left: -225px;
+    }
+    .about-us__block {
+        display: flex;
+    }
 }

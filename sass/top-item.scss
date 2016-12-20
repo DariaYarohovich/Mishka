@@ -3,12 +3,86 @@
     margin-top: 30px;
     margin-bottom: 35px;
 }
+.top-item__title-block{
+    background-color: bisque;
+    opacity: 0.4;
+}
 .top-item__item-block {
     @include openSans;
+    background-color: aquamarine;
+    opacity: 0.4;
 }
 
 @media (min-width: 768px) {
     .top-item {
-      
+      margin-top: 55px;
+      margin-bottom: 52px;
+    }
+    .top-item__title-block {
+        display: flex;
+        justify-content: space-between;
+    }
+    .top-item__item-block {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .top-item__desc {
+        width: 45%;
+        flex-shrink: 1;
+        margin-right: 10%;
+    }
+    .top-item__photo {
+        width: 45%;
+    }
+    .top-item__photo-item {
+        width: 100%;
+    }
+    .top-item__buy {
+        width: 50%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    .top-item__price {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .top-item__buy-btn {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1150px) {
+    .top-item {
+        margin-top: 71px;
+        margin-bottom: 70px;
+        position: relative;
+    }
+    .top-item__title-block {
+        justify-content: flex-start;
+        position: absolute;
+        top: 65px;
+    }
+    .top-item__moto {
+        order: -1;
+    }
+     .top-item__desc {
+        box-sizing: border-box;
+        width: 30%;
+        flex-shrink: 1;
+        margin-right: 5%;
+        margin-left: 20%;
+         padding-top: 165px;
+    }
+    .top-item__photo {
+        width: 45%;
+    }
+    .top-item__photo-item {
+        height: 636px;
+    }
+    .top-item__buy {
+        margin-left: 20%;
+        width: 30%;
     }
 }
