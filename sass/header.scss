@@ -1,0 +1,131 @@
+.header {
+    font-family: "Verdana", "Arial", sans-serif;
+    font-size: 16px;
+    opacity: 0.4;
+}
+.header__main-nav {
+    background-color: yellow;
+}
+.header__sub-nav {
+    display: none;
+    background-color: darkseagreen;
+}
+.header__delivery {
+    display: none;
+    background-color: darkseagreen;
+}
+.header__navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.header__nav-item {
+    padding: 0;
+}
+.header__mobile-menu {
+    position: relative;
+    padding: 20px;
+}
+.header__logo {
+    display: block;
+    margin: 0 auto;
+}
+.header__logo-block {
+    display: none;
+}
+.header__burger {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 20px;
+    height: 15px;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+.header__burger-line,
+.header__burger-line::before,
+.header__burger-line::after {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #000;
+}
+.header__burger-line::before {
+    content: "";
+    top: 5px;
+}
+.header__burger-line::after {
+    content: "";
+    top: 10px;
+}
+
+@media (min-width: 768px) {
+    .header__mobile-menu {
+        display: none;
+    }
+    .header {
+        min-height: 89px;
+        padding: 0 50px;
+        border-bottom: 1px solid #e7e7e7;
+        background-color: cornflowerblue;
+        position: relative;
+        z-index: 2;
+    }
+    .header__delivery {
+        display: block;
+        margin: 0;
+        position: absolute;
+        right: 50px;
+        bottom: -35px;
+    }
+    .header__logo-block {
+        display: block;
+        position: absolute;
+    }
+    .header__navigation {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 89px;
+    }
+    .header__navigation-1 {
+        position: absolute;
+        display: flex;
+        left: 50px;
+        bottom: -35px;
+    }
+    .header__navigation-2 {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1150px) {
+    .header__sub-nav {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        left: 50px;
+        bottom: -35px;
+    }
+    .header__logo-block {
+        left: 50%;
+        margin-left: -57px;
+    }
+    .header__navigation {
+        justify-content: space-between;
+    }
+    .header__navigation-1 {
+        position: relative;
+        left: 0;
+        bottom: 0;
+    }
+}
+ 

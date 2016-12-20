@@ -4,12 +4,15 @@
 <head>
 	<title>Каталог</title>
 	<meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="header">
 		<div class="header__mobile-menu">
-			<img class="header__logo" src="" alt="logo">
-			<button class="header__burger"></button>
+			<img class="header__logo" src="img/logo-mobile.svg" alt="logo">
+			<button class="header__burger">
+                <i class="header__burger-line"></i>
+            </button>
 		</div>
 		<nav class="header__main-nav">
 			<ul class="header__navigation">
@@ -22,41 +25,49 @@
 	</header>
 	<div class="catalogue">
 		<h1 class="catalogue__title">Каталог товаров</h1>
-		<div class="catalogue__item">
-			<img class="catalogue__img" src="">
-			<div class="catalogue__item-desc">
-				<p class="catalogue__item-title">Зайчик-попрыгайчик</p>
-				<p class="catalogue__item-text">Рост 30 см, вес 200 г</p>
-			</div>
-			<div class="catalogue__item-price">1 200 руб</div>
-		</div>
-		<div class="catalogue__item">
-			<img class="catalogue__img" src="">
-			<div class="catalogue__item-desc">
-				<p class="catalogue__item-title">Корзинка для белья</p>
-				<p class="catalogue__item-text">Диаметр 15 см, высота 10 см</p>
-			</div>
-			<div class="catalogue__item-price">690 руб</div>
-		</div>
-		<div class="catalogue__item">
-			<img class="catalogue__img" src="">
-			<div class="catalogue__item-desc">
-				<p class="catalogue__item-title">Большая корзинка для игрушек</p>
-				<p class="catalogue__item-text">Диаметр 30 см, высота 30 см</p>
-			</div>
-			<div class="catalogue__item-price">1 500 руб.</div>
-		</div>
-		<div class="catalogue__video">
-			<p class="catalogue__item-title">Процесс производства</p>
-			<video scr=""></video>
-			<p class="catalogue__item-text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-		</div>
+        <div class="catalogue__list container">
+            <div class="catalogue__item">
+                <img class="catalogue__img" src="img/photo-1-mobile@1x.jpg">
+                <div class="catalogue__item-desc">
+                    <p class="catalogue__item-title">Зайчик-попрыгайчик</p>
+                    <p class="catalogue__item-text">Рост 30 см, вес 200 г</p>
+                </div>
+                <div class="catalogue__item-price">1 200 руб</div>
+            </div>
+            <div class="catalogue__item">
+                <img class="catalogue__img" src="img/photo-2-mobile@1x.jpg">
+                <div class="catalogue__item-desc">
+                    <p class="catalogue__item-title">Корзинка для белья</p>
+                    <p class="catalogue__item-text">Диаметр 15 см, высота 10 см</p>
+                </div>
+                <div class="catalogue__item-price">690 руб</div>
+            </div>
+            <div class="catalogue__item">
+                <img class="catalogue__img" src="img/photo-3-mobile@1x.jpg">
+                <div class="catalogue__item-desc">
+                    <p class="catalogue__item-title">Большая корзинка для игрушек</p>
+                    <p class="catalogue__item-text">Диаметр 30 см, высота 30 см</p>
+                </div>
+                <div class="catalogue__item-price">1 500 руб.</div>
+            </div>
+            <div class="catalogue__video">
+                <p class="catalogue__item-title">Процесс производства</p>
+                <img class="catalogue__img" src="img/video-mobile@1x.jpg">
+                <p class="catalogue__item-text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            </div>
+        </div>
+        <button class="btn order">Сделать заказ</button>
 	</div>
-	<button class="order">Сделать заказ</button>
 	<footer class="footer">
 		<div class="footer__logo"></div>
-		<div class="social"></div>
-		<div class="footer__dev"></div>
+		<div class="social">
+            <a class="social__item social__item_ig" href=""></a>
+            <a class="social__item social__item_fb" href=""></a>
+            <a class="social__item social__item_tw" href=""></a>
+        </div>
+		<div class="footer__dev">
+            Разработано <a class="footer__dev-logo" href="#"></a>
+        </div>
 	</footer>
 </body>
 </html>

@@ -1,0 +1,11 @@
+.reviews {
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+.reviews__title {
+    @include title;
+}
+.review__item {
+    @include openSans;
+    font-size: 14px;
+}

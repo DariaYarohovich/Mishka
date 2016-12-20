@@ -3,32 +3,45 @@
 <head>
 	<title>MISHKA</title>
 	<meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="header">
 		<div class="header__mobile-menu">
-			<img class="header__logo" src="" alt="logo">
-			<button class="header__burger"></button>
+			<img class="header__logo" src="img/logo-mobile.svg" alt="logo">
+			<button class="header__burger">
+                <i class="header__burger-line"></i>
+            </button>
 		</div>
+        <a class="header__logo-block" href="#"><img src="img/logo-tablet.svg"></a>
 		<nav class="header__main-nav">
-			<ul class="header__navigation">
-				<ul class="header__nat-item">Каталог товаров</ul>
-				<ul class="header__nat-item">Вязание на заказ</ul>
-				<ul class="header__nat-item"></ul>
-				<ul class="header__nat-item"></ul>
+			<ul class="header__navigation header__navigation_mobile">
+                <div class="header__navigation-1">
+                    <ul class="header__nav-item"><a href="catalogue.html">Каталог товаров</a></ul>
+                    <ul class="header__nav-item"><a href="#">Вязание на заказ</a></ul>
+                </div>
+                <div class="header__navigation-2">
+                    <ul class="header__nav-item"><a href="#">Поиск по сайту</a></ul>
+                    <ul class="header__nav-item"><a href="#">Корзина: пока пуста</a></ul>
+                </div>
 			</ul>
 		</nav>
+        <ul class="header__sub-nav">
+            <li><a href="#">Новые поступления</a></li>
+            <li><a href="#">Распродажа</a></li>
+        </ul>
+        <p class="header__delivery">Бесплатная доставка по России</p>
 	</header>
 	<div class="top-block">
-		<h1 class="top-block__title"><Милые штуки ручной работы для дома</h1>
+		<h1 class="top-block__title">Милые штуки ручной <br> работы для дома</h1>
 		<div class="top-block__cat">
-			<div class="top-block__cat-item">Предметы интерьера</div>
-			<div class="top-block__cat-item">Детские игрушки</div>
+			<div class="top-block__cat-item top-block__cat-item_1n">Предметы интерьера</div>
+			<div class="top-block__cat-item top-block__cat-item_2n">Детские игрушки</div>
 		</div>
 	</div>
-	<div class="top-item">
+	<div class="top-item container">
 		<div class="top-item__title-block">
-			<div class="top-item__title"><Вязаные корзинки</div>
+			<div class="top-item__title">Вязаные корзинки</div>
 			<div class="top-item__moto">Товар недели</div>
 		</div>
 		<div class="top-item__item-block">
@@ -49,15 +62,17 @@
 					</tr>
 				</table>
 			</div>
-			<div class="top-item__photo"></div>
+			<div class="top-item__photo">
+                <img class="top-item__photo-item" src="img/triple-set-mobile@1x.jpg" width="260" height="315">
+            </div>
 			<div class="top-item__buy">
-				<p class="top-item__price"></p>
-				<button class="btn top-item__buy"></button>
+				<p class="top-item__price">Цена: 990 руб.</p>
+				<button class="btn top-item__buy">Заказать</button>
 			</div>
 		</div>
 	</div>
-	<div class="about-us">
-		<div class="about-us__title">Коротко о нас</div>
+	<div class="about-us container">
+		<div class="about-us__title">Коротко о нас:</div>
 		<div class="about-us__block">
 			<div class="about-us__item about-us__item--eco">Экологически чистые материалы</div>
 			<div class="about-us__item about-us__item--scand">Скандинавский стиль по российской цене</div>
@@ -67,16 +82,17 @@
 			<div class="about-us__item about-us__item--gift">Поставляется в подарочной упаковке</div>
 		</div>
 	</div>
-	<div class="reviews">
+	<div class="reviews container">
 		<div class="reviews__title">Отзывы</div>
 		<div class="review__item">
-			<p class="review__item-text"></p>
+			<p class="review__item-text">
+            Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
 			<span class="review__author"></span>
 			<span class="review__author-address"></span>
 		</div>
 		<div class="review__write">
 			<div class="review__navigation"></div>
-			<button class="btn review__write-btn"></button>
+			<button class="btn review__write-btn">Написать</button>
 		</div>
 	</div>
 	<div class="contacts">
@@ -85,12 +101,18 @@
 			<div class="contacts__address"></div>
 		</div>
 		<div class="contacts__map"></div>
-		<button class="btn contacts__write"></button>
+		<button class="btn contacts__write">Напишите нам</button>
 	</div>
 	<footer class="footer">
 		<div class="footer__logo"></div>
-		<div class="social"></div>
-		<div class="footer__dev"></div>
+		<div class="social">
+            <a class="social__item social__item_ig" href=""></a>
+            <a class="social__item social__item_fb" href=""></a>
+            <a class="social__item social__item_tw" href=""></a>
+        </div>
+		<div class="footer__dev">
+            Разработано <a class="footer__dev-logo" href="#"></a>
+        </div>
 	</footer>
 </body>
 </html>

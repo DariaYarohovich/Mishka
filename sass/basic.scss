@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "Verdana";
+    font-weight: 700;
+    src: local("Verdana"),
+        url("../fonts/verdanab.ttf") format("ttf");
+}
+@font-face {
+    font-family: "Open Sans Regular";
+    font-weight: 400;
+    src: local("Open Sans Regular"),
+        url("../fonts/opensans.woff") format("woff"),
+        url("../fonts/opensans.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Open Sans Bold";
+    font-weight: 700;
+    src: local("Open Sans Bold"),
+        url("../fonts/opensansbold.woff") format("woff"),
+        url("../fonts/opensansbold.woff2") format("woff2");
+}
+
+$base-color: #63d1bb;
+$base-color2: #56c3b2;
+$font-color: #fff;
+
+@mixin title {
+    font-family: "Verdana", "Arial", sans-serif;
+    font-size: 24px;
+}
+@mixin openSans {
+    font-family: "Open Sans Regular";
+    font-size: 14px;
+}
+
+.container {
+    padding: 0 30px;
+}
+
+body {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.btn {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #444444;
+    background: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #444444;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 50px;
+    }
+    body {
+        width: 768px;
+    }
+}
+
+@media (min-width: 1150px) {
+    body {
+        width: 1150px;
+    }
+}

@@ -1,0 +1,29 @@
+.catalogue__title {
+    @include title;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 30px 0;
+}
+.catalogue__item {
+    padding-top: 30px;
+}
+.catalogue__item-title {
+    @include title;
+    font-size: 16px;
+    font-weight: 700;
+}
+.catalogue__item-text {
+    @include openSans;
+    
+}
+.catalogue__item-price {
+    @include title;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid #ededed;
+    padding: 30px;
+}
+.catalogue__item-desc {
+    margin: 0 30px;
+    border-bottom: 1px solid #ededed;
+}

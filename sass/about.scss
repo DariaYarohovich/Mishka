@@ -1,0 +1,11 @@
+.about-us {
+    @include title;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+.about-us__block {
+    font-size: 16px;
+}
+.about-us__item {
+    padding-top: 90px;
+}

@@ -1,0 +1,22 @@
+.form-page__title {
+     @include title;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 30px 0;
+}
+.form-page__text {
+    padding: 30px;
+    margin: 0;
+    @include openSans;
+    font-size: 15px;
+}
+.form__block-title {
+    @include openSans;
+    font-weight: 700;
+    font-size: 17px;
+    color: #62d1ba;
+    text-transform: uppercase;
+}
+.form {
+    padding: 0 30px;
+}
