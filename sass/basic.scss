@@ -26,6 +26,7 @@ $font-color: #fff;
 @mixin title {
     font-family: "Verdana", "Arial", sans-serif;
     font-size: 24px;
+    margin: 0;
 }
 @mixin openSans {
     font-family: "Open Sans Regular";

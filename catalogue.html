@@ -14,14 +14,24 @@
                 <i class="header__burger-line"></i>
             </button>
 		</div>
+        <a class="header__logo-block" href="#"><img src="img/logo-tablet.svg"></a>
 		<nav class="header__main-nav">
-			<ul class="header__navigation">
-				<ul class="header__nat-item">Каталог товаров</ul>
-				<ul class="header__nat-item">Вязание на заказ</ul>
-				<ul class="header__nat-item"></ul>
-				<ul class="header__nat-item"></ul>
+			<ul class="header__navigation header__navigation_mobile">
+                <div class="header__navigation-1">
+                    <ul class="header__nav-item"><a href="catalogue.html">Каталог товаров</a></ul>
+                    <ul class="header__nav-item"><a href="#">Вязание на заказ</a></ul>
+                </div>
+                <div class="header__navigation-2">
+                    <ul class="header__nav-item"><a href="#">Поиск по сайту</a></ul>
+                    <ul class="header__nav-item"><a href="#">Корзина: пока пуста</a></ul>
+                </div>
 			</ul>
 		</nav>
+        <ul class="header__sub-nav">
+            <li><a href="#">Новые поступления</a></li>
+            <li><a href="#">Распродажа</a></li>
+        </ul>
+        <p class="header__delivery">Бесплатная доставка по России</p>
 	</header>
 	<div class="catalogue">
 		<h1 class="catalogue__title">Каталог товаров</h1>
@@ -31,42 +41,42 @@
                 <div class="catalogue__item-desc">
                     <p class="catalogue__item-title">Зайчик-попрыгайчик</p>
                     <p class="catalogue__item-text">Рост 30 см, вес 200 г</p>
+                    <div class="catalogue__item-price">1 200 руб</div>
                 </div>
-                <div class="catalogue__item-price">1 200 руб</div>
             </div>
             <div class="catalogue__item">
                 <img class="catalogue__img" src="img/photo-2-mobile@1x.jpg">
                 <div class="catalogue__item-desc">
                     <p class="catalogue__item-title">Корзинка для белья</p>
                     <p class="catalogue__item-text">Диаметр 15 см, высота 10 см</p>
-                </div>
-                <div class="catalogue__item-price">690 руб</div>
+                    <div class="catalogue__item-price">690 руб</div>
+                </div>    
             </div>
             <div class="catalogue__item">
                 <img class="catalogue__img" src="img/photo-3-mobile@1x.jpg">
                 <div class="catalogue__item-desc">
                     <p class="catalogue__item-title">Большая корзинка для игрушек</p>
                     <p class="catalogue__item-text">Диаметр 30 см, высота 30 см</p>
+                    <div class="catalogue__item-price">1 500 руб.</div>
                 </div>
-                <div class="catalogue__item-price">1 500 руб.</div>
-            </div>
-            <div class="catalogue__video">
-                <p class="catalogue__item-title">Процесс производства</p>
-                <img class="catalogue__img" src="img/video-mobile@1x.jpg">
-                <p class="catalogue__item-text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
             </div>
         </div>
-        <button class="btn order">Сделать заказ</button>
+        <div class="catalogue__video container">
+            <p class="catalogue__item-title">Процесс производства</p>
+            <img class="catalogue__img-video" src="img/video-mobile@1x.jpg">
+            <p class="catalogue__item-text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <button class="btn order">Сделать заказ</button>
+        </div>
 	</div>
 	<footer class="footer">
-		<div class="footer__logo"></div>
+		<div class="footer__logo"><img src="img/logo-mobile.svg"></div>
 		<div class="social">
             <a class="social__item social__item_ig" href=""></a>
             <a class="social__item social__item_fb" href=""></a>
             <a class="social__item social__item_tw" href=""></a>
         </div>
 		<div class="footer__dev">
-            Разработано <a class="footer__dev-logo" href="#"></a>
+            Разработано <a class="footer__dev-logo" href="#"><img src="img/logo-htmlacademy.svg"></a>
         </div>
 	</footer>
 </body>

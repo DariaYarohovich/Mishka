@@ -1,0 +1,107 @@
+.contacts {
+    padding-top: 50px;
+    margin-bottom: 40px;
+}
+.contacts__address-wrap {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.contacts__map {
+    height: 460px;
+    background-color: aquamarine;
+}
+.contacts__title {
+    @include title;
+    margin-bottom: 40px;
+}
+.contacts__email-block {
+    @include openSans;
+    display: flex;
+    margin-bottom: 40px;
+}
+.contacts__address-block {
+    @include openSans;
+    display: flex;
+    margin-bottom: 37px;
+}
+.contacts__email {
+    margin-right: 30px;
+}
+.contacts__address {
+    margin-right: 30px;
+}
+.contacts__btn-block {
+    margin-top: 39px;
+    padding:0 30px;
+}
+
+@media (min-width: 768px) {
+    .contacts {
+        padding-top: 65px;
+        margin-bottom: 57px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .contacts__address-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 65px;
+        background-image: url("../img/icons/icon-flag.svg");
+        background-repeat: no-repeat;
+        background-position: 93% 0;
+    }
+    .contacts__title {
+        width: 100%;
+        margin-bottom: 70px;
+    }
+    .contacts__email-block {
+        width: 50%;
+        margin-bottom: 0;
+    }
+    .contacts__address-block {
+        width: 50%;
+        margin-bottom: 0;
+    }
+    .contacts__btn-block {
+        width: 233px;
+        margin-top: 55px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1150px) {
+    .contacts {
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        padding-top: 97px;
+        margin-bottom: 105px;
+    }
+    .contacts__address-wrap {
+        box-sizing: border-box;
+        width: 50%;
+        padding-top: 80px;
+        padding-left: 175px;
+        background-position: 62px 63px;
+    }
+    .contacts__map {
+        width: 50%;
+    }
+    .contacts__btn-block {
+        position: absolute;
+        bottom: 0;
+        left: 225px;;
+        padding: 0;
+        margin: 0;
+    }
+    .contacts__email-block {
+        width: 100%;
+    }
+    .contacts__address-block {
+        width: 100%;
+    }
+}
