@@ -2,26 +2,40 @@
     background-color: #f1f1f1;
 }
 .footer__dev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 24px 30px;
     @include title;
     font-size: 18px;
+    text-align: center;
 }
 .footer__logo {
     display: none;
 }
+.footer__dev-logo {
+    background-image: url("../img/logo-htmlacademy.svg");
+    display: block;
+    width: 27px;
+    height: 34px;
+}
+.footer__dev p {
+    margin: 0;
+    margin-right: 25px;
+}
 
 @media (min-width: 768px) {
     .footer {
-        padding: 50px;
+        padding: 51px;
         display: flex;
         justify-content: space-between;
     }
     .footer__logo {
         display: block;
+        margin-right: 94px;
     }
     .footer__dev {
         padding: 0;
-        padding-right: 50px;
     }
 }
 
