@@ -14,56 +14,68 @@
                 <i class="header__burger-line"></i>
             </button>
 		</div>
+        <a class="header__logo-block" href="#"><img src="img/logo-tablet.svg"></a>
 		<nav class="header__main-nav">
-			<ul class="header__navigation">
-                <ul class="header__nav-item"><a href="catalogue.html">Каталог товаров</a></ul>
-				<ul class="header__nav-item">Вязание на заказ</ul>
-				<ul class="header__nav-item">Поиск по сайту</ul>
-				<ul class="header__nav-item">Корзина: пока пуста</ul>
+			<ul class="header__navigation header__navigation_mobile">
+                <div class="header__navigation-1">
+                    <ul class="header__nav-item"><a href="catalogue.html">Каталог товаров</a></ul>
+                    <ul class="header__nav-item"><a href="#">Вязание на заказ</a></ul>
+                </div>
+                <div class="header__navigation-2">
+                    <ul class="header__nav-item"><a href="#">Поиск по сайту</a></ul>
+                    <ul class="header__nav-item"><a href="#">Корзина: пока пуста</a></ul>
+                </div>
 			</ul>
 		</nav>
+        <ul class="header__sub-nav">
+            <li><a href="#">Новые поступления</a></li>
+            <li><a href="#">Распродажа</a></li>
+        </ul>
+        <p class="header__delivery">Бесплатная доставка по России</p>
 	</header>
 	<div class="form-page">
 		<h1 class="form-page__title">Вязание на заказ</h1>
-		<p class="form-page__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
+		<p class="form-page__text container">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
 	</div>
-	<form action="" class="form">
+	<form action="" class="form container">
 		<div class="form__block">
 			<p class="form__block-title">Тип</p>
-			<div class="form__input-block">
-				<input class="form__radio-input" type="radio" name="type" id="radio-1">
-				<label class="form__input-label" for="radio-1"></label>
-			</div>
-			<div class="form__input-block">
-				<input class="form__radio-input" type="radio" name="type" id="radio-2">
-				<label class="form__input-label" for="radio-2"></label>
-			</div>
+            <div class="form__input-wrap">
+                <div class="form__input-block">
+                    <input class="form__radio-input" type="radio" name="type" id="radio-1">
+                    <label class="form__input-label" for="radio-1">Аксессуар для интерьера</label>
+                </div>
+                <div class="form__input-block">
+                    <input class="form__radio-input" type="radio" name="type" id="radio-2">
+                    <label class="form__input-label" for="radio-2">Детская игрушка</label>
+                </div>
+            </div>
 		</div>
 		<div class="form__block">
 			<p class="form__block-title">Цвет</p>
 			<div class="form__input-block">
 				<input class="form__checkbox-input" type="checkbox" name="color1" id="color-1">
-				<label class="form__input-label" for="color-1"></label>
+				<label class="form__input-label" for="color-1">Белый</label>
 			</div>
 			<div class="form__input-block">
 				<input class="form__checkbox-input" type="checkbox" name="color32" id="color-2">
-				<label class="form__input-label" for="color-2"></label>
+				<label class="form__input-label" for="color-2">Серый</label>
 			</div>
 			<div class="form__input-block">
 				<input class="form__checkbox-input" type="checkbox" name="color3" id="color-3">
-				<label class="form__input-label" for="color-3"></label>
+				<label class="form__input-label" for="color-3">"Тиффани"</label>
 			</div>
 			<div class="form__input-block">
 				<input class="form__checkbox-input" type="checkbox" name="color4" id="color-4">
-				<label class="form__input-label" for="color-4"></label>
+				<label class="form__input-label" for="color-4">Черный</label>
 			</div>
 			<div class="form__input-block">
 				<input class="form__checkbox-input" type="checkbox" name="color5" id="color-5">
-				<label class="form__input-label" for="color-5"></label>
+				<label class="form__input-label" for="color-5">Розовый</label>
 			</div>
 			<div class="form__input-block">
 				<input class="form__checkbox-input" type="checkbox" name="color6" id="color-6">
-				<label class="form__input-label" for="color-6"></label>
+				<label class="form__input-label" for="color-6">Оранжевый</label>
 			</div>
 		</div>
 		<div class="form__block">
@@ -93,17 +105,20 @@
 			<p class="form__block-title">доп</p>
 			<textarea class="form__text-input form__textarea"></textarea>
 		</div>
-		<button class="btn form__btn">Отправить заказ</button>
+        <div class="form__btn-block">
+            <button class="btn form__btn">Отправить заказ</button>
+            <p class="form__hint">Все поля являются обязательными</p>
+        </div>
 	</form>
-	<footer class="footer container">
-		<div class="footer__logo"></div>
+	<footer class="footer">
+		<div class="footer__logo"><img src="img/logo-mobile.svg"></div>
 		<div class="social">
             <a class="social__item social__item_ig" href=""></a>
             <a class="social__item social__item_fb" href=""></a>
             <a class="social__item social__item_tw" href=""></a>
         </div>
 		<div class="footer__dev">
-            Разработано <a class="footer__dev-logo" href="#"></a>
+            Разработано <a class="footer__dev-logo" href="#"><img src="img/logo-htmlacademy.svg"></a>
         </div>
 	</footer>
 </body>

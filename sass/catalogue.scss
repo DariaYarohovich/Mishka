@@ -35,6 +35,16 @@
     margin: 0 30px;
    border-bottom: 1px solid #ededed;
 }
+.catalogue__video {
+    padding-top: 96px;
+}
+.catalogue__video-desc {
+    position: relative;
+}
+.catalogue__item-title {
+    position: absolute;
+    top: -240px;
+}
 
 @media (min-width: 768px) {
     .catalogue {
@@ -72,10 +82,14 @@
     .catalogue__video {
         display: flex;
         flex-direction: column;
+        padding-top: 0;
     }
     .catalogue__img-video {
         height: 455px;
-        order: -1;
+    }
+    .catalogue__item-title {
+        position: relative;
+        top: 0;
     }
 }
 
@@ -98,11 +112,17 @@
         height: 462px;
     }
     .catalogue__item-desc {
-
         width: 100%;
-
     }
     .catalogue__title {
         height: 256px;
+    }
+    .catalogue__video {
+        flex-direction: row;
+    }
+    .catalogue__video-desc {
+        padding: 80px 20px 58px 80px;
+        flex-basis: 40%;
+        
     }
 }
