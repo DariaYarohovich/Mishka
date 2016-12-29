@@ -49,9 +49,10 @@ body {
 .btn {
     box-sizing: border-box;
     width: 100%;
-    padding: 15px;
+    padding: 13px;
     border: 2px solid #444444;
     background: #fff;
+    @include openSans;
     text-transform: uppercase;
     font-weight: 700;
     color: #444444;

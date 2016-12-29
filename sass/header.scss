@@ -1,18 +1,13 @@
 .header {
     font-family: "Verdana", "Arial", sans-serif;
     font-size: 16px;
-    opacity: 0.4;
-}
-.header__main-nav {
-    background-color: yellow;
+    margin-bottom: 78px;
 }
 .header__sub-nav {
     display: none;
-    background-color: darkseagreen;
 }
 .header__delivery {
     display: none;
-    background-color: darkseagreen;
 }
 .header__navigation {
     list-style: none;
@@ -30,6 +25,7 @@
 .header__nav-item {
     display: block;
     padding: 29px 0;
+    padding-top: 30px;
     padding-left: 75px;
     border-bottom: 1px solid #ececec;
     text-decoration: none;
@@ -90,7 +86,6 @@
         min-height: 89px;
         padding: 0 50px;
         border-bottom: 1px solid #e7e7e7;
-        background-color: cornflowerblue;
         position: relative;
         z-index: 2;
     }
@@ -149,6 +144,8 @@
         padding-left: 72px;
         font-size: 16px;
         line-height: 27px;
+    }
+    .header__nav-item_search {
         border-left: 1px solid #ececec;
         border-right: 1px solid #ececec;
     }

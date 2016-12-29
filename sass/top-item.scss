@@ -3,24 +3,76 @@
     margin-top: 30px;
     margin-bottom: 35px;
 }
-.top-item__title-block{
-    background-color: bisque;
-    opacity: 0.4;
+
+.top-item__title {
+    letter-spacing: -0.1px;
+}
+.top-item__moto {
+    margin-top: 4px;
+    color: #63d1bb;
+    @include openSans;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.4px;
 }
 .top-item__item-block {
+    margin-top: 25px;
     @include openSans;
-    background-color: aquamarine;
-    opacity: 0.4;
+    letter-spacing: 0.1px;
+    line-height: 23px;
+}
+.top-item__table-desc {
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 25px;
+    color: #444444;
+}
+tbody {
+    width: 100%;
+}
+.top-item__table-row{
+    border-bottom: 1px solid #ececec;
+}
+.top-item__table-row td {
+    padding: 8px 0;
+}
+.top-item__desc-name {
+    width: 95px;
+}
+.top-item__price {
+    padding: 19px 0;
+    padding-bottom: 26px;
+    @include title;
+    font-size: 16px;
+    font-size: 16px;
+    text-align: center;
+    color: #444444;
+}
+.top-item__buy-btn {
+    color: #444444;
+    font-size: 16px;
 }
 
 @media (min-width: 768px) {
     .top-item {
-      margin-top: 55px;
+      margin-top: 46px;
       margin-bottom: 52px;
     }
     .top-item__title-block {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 65px;
+    }
+    .top-item__title {
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -0.5px;
+    }
+    .top-item__moto {
+        width: 124px;
+        text-align: center;
+        line-height: 18px;
     }
     .top-item__item-block {
         display: flex;
@@ -28,15 +80,29 @@
         position: relative;
     }
     .top-item__desc {
-        width: 45%;
+        width: 44%;
         flex-shrink: 1;
-        margin-right: 10%;
+        margin-right: 6%;
+    }
+    .top-item__desc-text {
+        margin: 0;
+        margin-top: -6px;
+        font-size: 16px;
+        line-height: 29px;
+    }
+    .top-item__table-desc {
+        margin-top: 36px;
+        font-size: 15px;
+    }
+    .top-item__table-row td {
+        padding: 5px 0;
     }
     .top-item__photo {
-        width: 45%;
+        width: 50%;
     }
     .top-item__photo-item {
         width: 100%;
+        height: initial;
     }
     .top-item__buy {
         width: 50%;
@@ -45,11 +111,14 @@
         bottom: 0;
     }
     .top-item__price {
-        margin-bottom: 40px;
+        margin-bottom: 36px;
+        padding-bottom: 5px;
         text-align: center;
+        font-size: 18px;
     }
     .top-item__buy-btn {
-        width: 100%;
+        width: 88%;
+        margin-right: 12%;
     }
 }
 
