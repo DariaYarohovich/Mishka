@@ -36,6 +36,11 @@ $font-color: #fff;
 .container {
     padding: 0 30px;
 }
+.clearfix {
+    display: table;
+    content: "";
+    clear: both;
+}
 
 body {
     width: 320px;

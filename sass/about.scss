@@ -1,6 +1,6 @@
 .about-us {
     @include title;
-    padding-top: 45px;
+    padding-top: 35px;
     margin-bottom: 60px;
     position: relative;
 }
@@ -22,39 +22,97 @@
     font-size: 16px;
 }
 .about-us__item {
-    padding-top: 90px;
+    padding-top: 85px;
+    font-size: 16px;
+    background-repeat: no-repeat;
+    background-position: 8px 32px;
+}
+.about-us__item--eco {
+    background-image: url("../img/icons/icon-feature-1.svg");
+}
+.about-us__item--scand {
+    background-image: url("../img/icons/icon-feature-3.svg");
+    background-position: 0 32px;
+}
+.about-us__item--photo {
+    background-image: url("../img/icons/icon-feature-5.svg");
+    background-position: 8px 38px;
+}
+.about-us__item--love {
+    background-image: url("../img/icons/icon-feature-2.svg");
+    background-position: 4px 35px;
+}
+.about-us__item--local {
+    background-image: url("../img/icons/icon-feature-4.svg");
+    background-position: 0 36px;
+}
+.about-us__item--gift {
+    background-image: url("../img/icons/icon-feature-6.svg");
+    background-position:3px 34px;
 }
 
-@media (min-width: 736px) {
+@media (min-width: 768px) {
     .about-us {
         margin-bottom: 80px;
+        padding-top: 62px;
     }
     .about-us::before {
-        height: 15px;
-        background-size: 98%;
+        height: 16px;
+        background-size: 105%;
+        background-position: -8px 0px;
         margin-right: -50px;
         margin-left: -50px;
     }
     .about-us__block {
         display: flex;
     }
+    .about-us__title {
+        font-size: 39px;
+    }
+    .about-us__item {
+        margin-top: 46px;
+        padding-top: 60px;
+        font-size: 20px;
+        background-repeat: no-repeat;
+        background-position: 8px 9px;
+    }
+    .about-us__item--scand {
+        background-position: 1px 9px;
+    }
+    .about-us__item--photo {
+        background-position: 8px 16px;
+    }
+    .about-us__item--love {
+        background-position: 8px 11px;
+    }
+    .about-us__item--local {
+        background-position: 0 13px;
+    }
+    .about-us__item--gift {
+        background-position: 9px 12px;
+    }
     
 }
 
 @media (min-width: 1150px) {
     .about-us {
-        margin-top: 94px;
+        margin-top: 70px;
         margin-bottom: 90px;
+        padding-top: 75px;
         padding-right: 225px;
         padding-left: 225px;
     }
     .about-us::before {
-        height: 21px;
-        background-size: 87%;
+        height: 23px;
+        background-size: 100%;
         margin-right: -225px;
         margin-left: -225px;
     }
     .about-us__block {
         display: flex;
+    }
+    .about-us__title {
+        margin-bottom: -5px;
+        font-size: 50px;
     }
 }

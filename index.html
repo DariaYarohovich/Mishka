@@ -94,15 +94,15 @@
             <div class="reviews__item">
                 <p class="reviews__item-text">
                 Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
-                <span class="reviews__author">Name</span>
-                <span class="reviews__author-address">Address</span>
+                <span class="reviews__author">Анастасия Красильникова</span>
+                <span class="reviews__author-address">@misssssssiskras</span>
             </div>
             <div class="reviews__navigation"></div>
             <button class="btn reviews__write-btn">Написать</button>
         </div>
 	</div>
 	<div class="contacts">
-		<div class="contacts__address-wrap">
+		<div class="contacts__address-wrap clearfix">
             <div class="contacts__title">Контакты</div>
 			<div class="contacts__email-block">
                 <span class="contacts__email">e-mail:</span>
@@ -113,7 +113,13 @@
                 <span class="contacts__address-str">г. Санкт-Петербург,<br>ул. Большая Конюшенная, <br>д. 19/8, офис 101</span>
             </div>
 		</div>
-		<div class="contacts__map"></div>
+		<div class="contacts__map">
+            <picture>
+                <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
+                <img class="" src="img/map-mobile@1x.jpg" alt="Карта" title="Карта">
+            </picture>
+        </div>
         <div class="contacts__btn-block">
 		  <button class="btn contacts__write">Напишите нам</button>
         </div>
