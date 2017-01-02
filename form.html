@@ -9,7 +9,11 @@
 <body>
 	<header class="header">
 		<div class="header__mobile-menu">
-			<img class="header__logo" src="img/logo-mobile.svg" alt="logo">
+            <picture>
+                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="header__logo" src="img/logo-mobile.svg" alt="logo">
+            </picture>
 			<button class="header__burger">
                 <i class="header__burger-line"></i>
             </button>
@@ -18,18 +22,18 @@
 		<nav class="header__main-nav">
 			<ul class="header__navigation header__navigation_mobile">
                 <div class="header__navigation-1">
-                    <ul class="header__nav-item"><a href="catalogue.html">Каталог товаров</a></ul>
-                    <ul class="header__nav-item"><a href="#">Вязание на заказ</a></ul>
+                    <li><a class="header__nav-item" href="catalogue.html">Каталог товаров</a></li>
+                    <li><a class="header__nav-item header__nav-item_2" href="#">Вязание на заказ</a></li>
                 </div>
                 <div class="header__navigation-2">
-                    <ul class="header__nav-item"><a href="#">Поиск по сайту</a></ul>
-                    <ul class="header__nav-item"><a href="#">Корзина: пока пуста</a></ul>
+                    <li><a class="header__nav-item header__nav-item_search" href="#"><span class="header__nav-item_search-title">Поиск по сайту</span></a></li>
+                    <li><a class="header__nav-item header__nav-item_cart" href="#">Корзина: пока пуста</a></li>
                 </div>
 			</ul>
 		</nav>
         <ul class="header__sub-nav">
-            <li><a href="#">Новые поступления</a></li>
-            <li><a href="#">Распродажа</a></li>
+            <li><a class="header__sub-nav-item" href="#">Новые поступления</a></li>
+            <li><a class="header__sub-nav-item" href="#">Распродажа</a></li>
         </ul>
         <p class="header__delivery">Бесплатная доставка по России</p>
 	</header>
@@ -111,7 +115,9 @@
         </div>
 	</form>
 	<footer class="footer">
-		<div class="footer__logo"><img src="img/logo-mobile.svg"></div>
+		<div class="footer__logo">
+            <img src="img/icons/logo-footer.svg">
+        </div>
 		<div class="social">
             <a class="social__item social__item_ig" href=""></a>
             <a class="social__item social__item_fb" href=""></a>

@@ -8,7 +8,11 @@
 <body>
 	<header class="header">
 		<div class="header__mobile-menu">
-			<img class="header__logo" src="img/logo-mobile.svg" alt="logo">
+			<picture>
+                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="header__logo" src="img/logo-mobile.svg" alt="logo">
+            </picture>
 			<button class="header__burger">
                 <i class="header__burger-line"></i>
             </button>
@@ -132,7 +136,7 @@
             <a class="social__item social__item_tw" href=""></a>
         </div>
 		<div class="footer__dev">
-            <p>Разработано</p> <a class="footer__dev-logo" href="#"></a>
+            Разработано <a class="footer__dev-logo" href="#"><img src="img/logo-htmlacademy.svg"></a>
         </div>
 	</footer>
 </body>
