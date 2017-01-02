@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <head>
 	<title>Каталог</title>
@@ -18,18 +17,18 @@
 		<nav class="header__main-nav">
 			<ul class="header__navigation header__navigation_mobile">
                 <div class="header__navigation-1">
-                    <ul class="header__nav-item"><a href="catalogue.html">Каталог товаров</a></ul>
-                    <ul class="header__nav-item"><a href="#">Вязание на заказ</a></ul>
+                    <li><a class="header__nav-item" href="catalogue.html">Каталог товаров</a></li>
+                    <li><a class="header__nav-item header__nav-item_2" href="#">Вязание на заказ</a></li>
                 </div>
                 <div class="header__navigation-2">
-                    <ul class="header__nav-item"><a href="#">Поиск по сайту</a></ul>
-                    <ul class="header__nav-item"><a href="#">Корзина: пока пуста</a></ul>
+                    <li><a class="header__nav-item header__nav-item_search" href="#"><span class="header__nav-item_search-title">Поиск по сайту</span></a></li>
+                    <li><a class="header__nav-item header__nav-item_cart" href="#">Корзина: пока пуста</a></li>
                 </div>
 			</ul>
 		</nav>
         <ul class="header__sub-nav">
-            <li><a href="#">Новые поступления</a></li>
-            <li><a href="#">Распродажа</a></li>
+            <li><a class="header__sub-nav-item" href="#">Новые поступления</a></li>
+            <li><a class="header__sub-nav-item" href="#">Распродажа</a></li>
         </ul>
         <p class="header__delivery">Бесплатная доставка по России</p>
 	</header>
@@ -37,7 +36,11 @@
 		<h1 class="catalogue__title">Каталог товаров</h1>
         <div class="catalogue__list container">
             <div class="catalogue__item">
-                <img class="catalogue__img" src="img/photo-1-mobile@1x.jpg">
+                <picture class="catalogue__img">
+                    <source media="(min-width: 1150px)" srcset="img/photo-1-desktop@1x.jpg">
+                    <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg">
+                    <img src="img/photo-1-mobile@1x.jpg" alt="Зайчик" title="Зайчик">
+                </picture>
                 <div class="catalogue__item-desc">
                     <p class="catalogue__item-title">Зайчик-попрыгайчик</p>
                     <p class="catalogue__item-text">Рост 30 см, вес 200 г</p>
@@ -45,7 +48,11 @@
                 </div>
             </div>
             <div class="catalogue__item">
-                <img class="catalogue__img" src="img/photo-2-mobile@1x.jpg">
+                <picture class="catalogue__img">
+                    <source media="(min-width: 1150px)" srcset="img/photo-2-desktop@1x.jpg">
+                    <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg">
+                    <img src="img/photo-2-mobile@1x.jpg" alt="bag" title="bag">
+                </picture>
                 <div class="catalogue__item-desc">
                     <p class="catalogue__item-title">Корзинка для белья</p>
                     <p class="catalogue__item-text">Диаметр 15 см, высота 10 см</p>
@@ -53,7 +60,11 @@
                 </div>    
             </div>
             <div class="catalogue__item">
-                <img class="catalogue__img" src="img/photo-3-mobile@1x.jpg">
+                <picture class="catalogue__img">
+                    <source media="(min-width: 1150px)" srcset="img/photo-3-desktop@1x.jpg">
+                    <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg">
+                    <img src="img/photo-3-mobile@1x.jpg" alt="toys" title="toys">
+                </picture>
                 <div class="catalogue__item-desc">
                     <p class="catalogue__item-title">Большая корзинка для игрушек</p>
                     <p class="catalogue__item-text">Диаметр 30 см, высота 30 см</p>
@@ -64,7 +75,7 @@
         <div class="catalogue__video container">
             <img class="catalogue__img-video" src="img/video-mobile@1x.jpg">
             <div class="catalogue__video-desc">
-                <p class="catalogue__item-title">Процесс производства</p>
+                <p class="catalogue__item-title catalogue__item-title_video">Процесс производства</p>
                 <p class="catalogue__item-text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
                 <button class="btn order">Сделать заказ</button>
             </div>

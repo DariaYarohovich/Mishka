@@ -45,9 +45,9 @@ $font-color: #fff;
 body {
     width: 320px;
     margin: 0 auto;
-    background-image: url("../img/mishka-index-mobile.jpg");
+    background-image: url("../img/mishka-catalog-mobile.jpg");
     background-repeat: no-repeat;
-    background-position: center 0;
+    background-position: center 3px;
     height: 4350px;
 }
 
@@ -69,13 +69,14 @@ body {
     }
     body {
         width: 768px;
-        background-image: url("../img/mishka-index-tablet.jpg");
+        background-image: url("../img/mishka-catalog-tablet.jpg");
+        background-position: center 0;
     }
 }
 
 @media (min-width: 1150px) {
     body {
         width: 1150px;
-        background-image: url("../img/mishka-index-desktop.jpg");
+        background-image: url("../img/mishka-catalog-desktop.jpg");
     }
 }
