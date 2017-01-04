@@ -42,10 +42,13 @@
 	</div>
 	<form action="" class="form container">
 		<div class="form__block">
-			<p class="form__block-title">Тип</p>
+            <div class="form__title-wrap">
+                <p class="form__block-title">Тип</p>
+                <span class="form__block-title-line"></span>
+            </div>
             <div class="form__input-wrap">
                 <label class="form__input-block">
-                    <input class="form__radio-input" type="radio" name="type" id="radio-1">
+                    <input class="form__radio-input" type="radio" name="type" id="radio-1" checked>
                     <span class="form__radio-indicator" for="radio-1"></span>
                     Аксессуар для интерьера
                 </label>
@@ -57,10 +60,13 @@
             </div>
 		</div>
 		<div class="form__block">
-			<p class="form__block-title form__block-title_color">Цвет</p>
+            <div class="form__title-wrap">
+			    <p class="form__block-title form__block-title_color">Цвет</p>
+                <span class="form__block-title-line"></span>
+            </div>
             <div class="form__input-wrap form__input-wrap_check">
                 <label class="form__input-block form__input-block_check">
-                    <input class="form__checkbox-input" type="checkbox" name="color1" id="color-1">
+                    <input class="form__checkbox-input" type="checkbox" name="color1" id="color-1" checked>
                     <span class="form__checkbox-indicator" for="color-1"></span>
                     Белый
                 </label>
@@ -92,7 +98,10 @@
             </div>
 		</div>
 		<div class="form__block">
-			<p class="form__block-title form__block-title_name">ФИО</p>
+            <div class="form__title-wrap">
+                <p class="form__block-title form__block-title_name">ФИО</p>
+                <span class="form__block-title-line"></span>
+            </div>
 			<div class="form__input-block">
 				<input class="form__text-input" type="text" name="lastname" id="lastname">
 				<label class="form__input-label" for="lastname">Фамилия:</label>
@@ -107,15 +116,24 @@
 			</div>
 		</div>
 		<div class="form__block">
-			<p class="form__block-title">Тел</p>
+            <div class="form__title-wrap">
+                <p class="form__block-title">Тел</p>
+                <span class="form__block-title-line"></span>
+            </div>
 			<input class="form__text-input" type="tel" name="tel">
 		</div>
 		<div class="form__block">
-			<p class="form__block-title">E-mail</p>
+            <div class="form__title-wrap">
+                <p class="form__block-title">E-mail</p>
+                <span class="form__block-title-line"></span>
+            </div>
 			<input class="form__text-input" type="email" name="email">
 		</div>
 		<div class="form__block">
-			<p class="form__block-title">доп</p>
+            <div class="form__title-wrap">
+                <p class="form__block-title">доп</p>
+                <span class="form__block-title-line"></span>
+            </div>
 			<textarea class="form__text-input form__textarea"></textarea>
 		</div>
         <div class="form__btn-block">
