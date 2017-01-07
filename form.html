@@ -40,8 +40,8 @@
 		<h1 class="form-page__title">Вязание на заказ</h1>
 		<p class="form-page__text container">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
 	</div>
-	<form action="" class="form container">
-		<div class="form__block">
+	<form action="" class="form">
+		<div class="form__block container">
             <div class="form__title-wrap">
                 <p class="form__block-title">Тип</p>
                 <span class="form__block-title-line"></span>
@@ -59,8 +59,8 @@
                 </label>
             </div>
 		</div>
-		<div class="form__block">
-            <div class="form__title-wrap">
+		<div class="form__block form__block_color container">
+            <div class="form__title-wrap form__title-wrap_check">
 			    <p class="form__block-title form__block-title_color">Цвет</p>
                 <span class="form__block-title-line"></span>
             </div>
@@ -97,46 +97,48 @@
                 </label>
             </div>
 		</div>
-		<div class="form__block">
-            <div class="form__title-wrap">
+		<div class="form__block form__block_name container">
+            <div class="form__title-wrap form__title-wrap_name">
                 <p class="form__block-title form__block-title_name">ФИО</p>
                 <span class="form__block-title-line"></span>
             </div>
-			<div class="form__input-block">
-				<input class="form__text-input" type="text" name="lastname" id="lastname">
-				<label class="form__input-label" for="lastname">Фамилия:</label>
-			</div>
-			<div class="form__input-block">
-				<input class="form__text-input" type="text" name="name" id="name">
-				<label class="form__input-label" for="name">Имя:</label>
-			</div>
-			<div class="form__input-block">
-				<input class="form__text-input" type="text" name="surname" id="surname">
-				<label class="form__input-label" for="surname">Отчество:</label>
-			</div>
+            <div class="form__block-name_wrap">
+                <div class="form__input-block form__input-block_name">
+                    <label class="form__input-label form__input-label_name" for="lastname">Фамилия:</label>
+                    <input class="form__text-input" type="text" name="lastname" id="lastname" placeholder="Укажите фамилию">
+                </div>
+                <div class="form__input-block form__input-block_name">
+                    <label class="form__input-label form__input-label_name" for="name">Имя:</label>
+                    <input class="form__text-input" type="text" name="name" id="name" placeholder="Введите ваше имя">
+                </div>
+                <div class="form__input-block form__input-block_name">
+                    <label class="form__input-label form__input-label_name" for="surname">Отчество:</label>
+                    <input class="form__text-input" type="text" name="surname" id="surname" placeholder="Отчество, если желаете">
+                </div>
+            </div>
 		</div>
-		<div class="form__block">
-            <div class="form__title-wrap">
+		<div class="form__block form__block_phone container">
+            <div class="form__title-wrap form__title-wrap_phone">
                 <p class="form__block-title">Тел</p>
                 <span class="form__block-title-line"></span>
             </div>
-			<input class="form__text-input" type="tel" name="tel">
+			<input class="form__text-input" type="tel" name="tel" placeholder="+7 XXX XX XX">
 		</div>
-		<div class="form__block">
-            <div class="form__title-wrap">
+		<div class="form__block form__block_mail container">
+            <div class="form__title-wrap form__title-wrap_mail">
                 <p class="form__block-title">E-mail</p>
                 <span class="form__block-title-line"></span>
             </div>
-			<input class="form__text-input" type="email" name="email">
+			<input class="form__text-input" type="email" name="email" placeholder="Ваш e-mail">
 		</div>
-		<div class="form__block">
+		<div class="form__block container">
             <div class="form__title-wrap">
                 <p class="form__block-title">доп</p>
                 <span class="form__block-title-line"></span>
             </div>
-			<textarea class="form__text-input form__textarea"></textarea>
+			<textarea class="form__text-input form__textarea">Опишите ваши пожелания к заказу</textarea>
 		</div>
-        <div class="form__btn-block">
+        <div class="form__btn-block container">
             <button class="btn form__btn">Отправить заказ</button>
             <p class="form__hint">Все поля являются обязательными</p>
         </div>
